@@ -17,7 +17,7 @@ async def _callbacks(Legend: Client, callback_query: CallbackQuery):
             await Legend.edit_message_text(
                 chat_id=chat_id,
                 message_id=message_id,
-                text="⚜️ Help Menu⚜️\n\n   Powered By @TeamLegendXD",
+                text="⚜️ Help Menu⚜️\n\n   Powered By @The_Eternity_Soul",
                 reply_markup=InlineKeyboardMarkup(Data.HELP_MENU1),
             )
     elif query == "close":
@@ -26,7 +26,7 @@ async def _callbacks(Legend: Client, callback_query: CallbackQuery):
         await Legend.edit_message_text(
             chat_id=chat_id,
             message_id=message_id,
-            text="Help Menu Has Been Closed\n\n          © @TeamLegendXD",
+            text="Help Menu Has Been Closed\n\n          © @The_Eternity_Soul",
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(Data.REVERT),
         )
